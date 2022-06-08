@@ -1,0 +1,26 @@
+Pathfinder 2 Importer Help Document
+
+Player API Calls
+
+!charsheet  - creates a charctersheet, viewable by all, assigned to the player making the command,
+ - credit goes to Kevin Searle for the work (I copied it from the CharacterSheet API)
+
+!importPF2  - imports PF2 character for player (Pathbuilder is support, working on HeroLab) - updates all characters associated with the player.
+
+!assignChar  - can assign an unassigned characters - provides a list of all unassigned characters (excluding NPCs without a player name associated with it) ... so, if you have a pet put your player name in the correct field in the character sheet
+
+!importNPC  - import creature stat block into the character sheet
+
+
+GM API Calls
+
+!importNPC - import creature stat blocks into the character sheet - converts character sheet type to NPC
+
+Future - additions
+
+!exportPF2 - export JSON structure for foundry (experimental)
+
+
+--requires universalChat API --
+
+!createmacros
