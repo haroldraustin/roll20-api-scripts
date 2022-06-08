@@ -1,0 +1,18 @@
+
+The Pathfinder2eCharacterImport takes a JSON data structure from Pathbuilder2e output, 
+and puts the values in the appropriate fields.
+
+Once the Json data structure is placed in the character sheets campaign notes,
+in the chat type "!importPF2" witout double quotes (").
+
+Outstanding issues:
+1) Upon programmatically adding languages, weapons, armors, feats, spells (anything with a dynamic row addition) - unable to find the setting to close the expansion (may need to do this manually from the player side ... possibly add a note to check the data entry?)
+2) PF2 CharacterSheet by roll20 Class DC select box uses stat modifier as the unique value - may not be set correctly if the character has 2 modifiers of the same value
+3) hit_points_max is calculated for players (and not set), NPC has hit_points_max set ... no way to get hit_points_max into the current hit points (calculate and hope the numbers add up?)
+4) Not all the fields auto-populate (should these be forced)?
+5) 
+Future plans -
+parsing creature blocks to the npc elements
+HeroLab conversion
+
+Fixing bugs and identifying workarounds
